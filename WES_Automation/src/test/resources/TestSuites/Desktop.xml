@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite_Desktop">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.qualitymatrix.desktop.testcases.TC_001_Document_Protected_Using_Seclore_agent"/>
+      <class name="com.qualitymatrix.desktop.testcases.TC_002_Document_UnProtect_Using_Seclore_agent"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

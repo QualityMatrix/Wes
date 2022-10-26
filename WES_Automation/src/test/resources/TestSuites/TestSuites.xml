@@ -1,0 +1,6 @@
+<suite name="suite of suites">
+    <suite-files>
+        <suite-file path="Desktop.xml" />
+        <suite-file path="Web.xml" />
+    </suite-files>
+</suite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener
+			class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+		<listener class-name="com.qobox.listeners.TestNGRetry" />
+	</listeners>
+	<test name="Web" parallel="methods" thread-count="3">
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.qobox.web.testcases.TC_001_Login_LogOut" />
+			<class
+				name="com.qobox.web.testcases.TC_002_invention_disclosure" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
